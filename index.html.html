@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Earth – Care for Our Environment</title>
+</head>
+<body bgcolor="#f0fff0" text="#2c3e50" link="#006400" vlink="#2e8b57">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth – Care for Our Environment</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0fff0;
+            color: #2c3e50;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        a {
+            color: #006400;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2e8b57;
+            text-decoration: underline;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #006400;
+        }
+
+        .header p {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #2e8b57;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #2e8b57, transparent);
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        /* Banner Section */
+        .banner {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .banner img {
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 100, 0, 0.2);
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner p {
+            margin-top: 12px;
+            font-size: 1.1rem;
+            color: #2e8b57;
+        }
+
+        /* Section Common */
+        .section {
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #006400;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section h2::after {
+            content: '';
+            width: 60%;
+            height: 3px;
+            background: #32cd32;
+            position: absolute;
+            bottom: -5px;
+            left: 20%;
+            border-radius: 2px;
+        }
+
+        /* Tables */
+        table {
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 80%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 100, 0, 0.15);
+        }
+
+        table th,
+        table td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #90ee90;
+            color: #006400;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+        }
+
+        table tr {
+            background-color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        table tr:hover {
+            background-color: #f0fff0;
+        }
+
+        /* Gallery */
+        .gallery-table td {
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-table td:hover {
+            transform: translateY(-8px);
+        }
+
+        .gallery-table img {
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 100, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .gallery-table img:hover {
+            box-shadow: 0 6px 20px rgba(0, 100, 0, 0.35);
+        }
+
+        .gallery-table p {
+            margin-top: 10px;
+            color: #006400;
+            font-weight: bold;
+        }
+
+        /* Info Section */
+        .info-content {
+            width: 75%;
+            margin: 0 auto;
+            text-align: justify;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 100, 0, 0.1);
+        }
+
+        .info-content p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        /* Form Styles */
+        form table {
+            width: 40%;
+            min-width: 320px;
+        }
+
+        form table td:first-child {
+            background-color: #f8fff8;
+            font-weight: 500;
+            color: #006400;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #90ee90;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #006400;
+            box-shadow: 0 0 0 3px rgba(0, 100, 0, 0.15);
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 6px;
+            cursor: pointer;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 22px;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #006400;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004d00;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 100, 0, 0.3);
+        }
+
+        input[type="reset"] {
+            background-color: #e8f5e9;
+            color: #2e8b57;
+            border: 1px solid #2e8b57;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c8e6c9;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 3px solid #2e8b57;
+            color: #2e8b57;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            table, .info-content {
+                width: 95%;
+            }
+            .gallery-table td {
+                display: block;
+                width: 100%;
+            }
+            form table {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Header Section -->
+<div class="header">
+    <h1>🌍 Green Earth Initiative</h1>
+    <p><i>“Protect Nature, Secure Our Future”</i></p>
+    <hr>
+</div>
+
+<!-- Banner Image -->
+<div class="banner">
+    <img src="c:\Users\user\Downloads\a0cc494b-33c6-46d4-b32f-9165ac114c5e.jpg" alt="Green Nature Banner" width="750" height="250">
+    <p>Our planet — our responsibility</p>
+</div>
+
+<!-- About Section with Table -->
+<div class="section">
+    <h2>About Our Cause</h2>
+    <table>
+        <tr>
+            <th>Our Goal</th>
+            <th>What We Do</th>
+            <th>How You Can Help</th>
+        </tr>
+        <tr>
+            <td align="center">Raise awareness on environmental protection and reduce pollution in local communities.</td>
+            <td align="center">Conduct clean-ups, tree planting, and educational campaigns in schools and barangays.</td>
+            <td align="center">Join our activities, practice waste segregation, and plant trees at home.</td>
+        </tr>
+    </table>
+</div>
+
+<hr>
+
+<!-- Gallery / Nature Images -->
+<div class="section">
+    <h2>Nature We Must Protect</h2>
+    <p>These are the beautiful places and resources we should never destroy.</p>
+    <table class="gallery-table">
+        <tr>
+            <td>
+                <img src="c:\Users\user\Downloads\0c333396-436b-4462-95b3-18483a2251ae.jpg" alt="Green Forest" width="220" height="150">
+                <p><b>Healthy Forests</b></p>
+            </td>
+            <td>
+                <img src="c:\Users\user\Downloads\a0131e1c-e5b9-4087-b549-0753a1f0da6d.jpg" alt="Clean Ocean" width="220" height="150">
+                <p><b>Clean Waters</b></p>
+            </td>
+            <td>
+                <img src="c:\Users\user\Downloads\1a0e9583-4d82-485e-b50f-56d230956c1e (1).jpg" alt="Community Garden" width="220" height="150">
+                <p><b>Green Communities</b></p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<hr>
+
+<!-- Information Section -->
+<div class="section">
+    <h2>Why It Matters</h2>
+    <div class="info-content">
+        <p>Environment is everything to us — the air we breathe, the water we drink, and the land where we grow our food. When we damage nature through littering, burning plastics, or cutting trees without replacement, we bring harm to ourselves and the next generation.</p>
+        <p>Simple actions create big changes. Segregating trash, saving water, using eco-bags, and planting even one tree can help restore our surroundings. Nature does not need us — but we need nature.</p>
+        <p>Let us start today. It is never too late to care.</p>
+    </div>
+</div>
+
+<hr>
+
+<!-- Registration / Contact Form -->
+<div class="section">
+    <h2>Join Our Movement</h2>
+    <p>Fill out the form below to volunteer or receive updates.</p>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td align="right"><label for="fname">Full Name:</label></td>
+                <td><input type="text" id="fname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="number">Contact Number:</label></td>
+                <td><input type="tel" id="number" name="phone"></td>
+            </tr>
+            <tr>
+                <td align="right">Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Interests:</td>
+                <td>
+                    <input type="checkbox" id="plant" name="interest" value="Tree Planting">
+                    <label for="plant">Tree Planting</label><br>
+                    <input type="checkbox" id="clean" name="interest" value="Clean-up Drives">
+                    <label for="clean">Clean-up Drives</label><br>
+                    <input type="checkbox" id="edu" name="interest" value="Education Campaigns">
+                    <label for="edu">Education Campaigns</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="message">Message:</label></td>
+                <td>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your thoughts here..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit Form">
+                    &nbsp;&nbsp;
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2026 Green Earth Initiative | All Rights Reserved</p>
+    <p>Created by: <b>[Edward T. Mendez Jr]</b> | Section: <b>[BSIT-2B]</b></p>
+</div>
+
+</body>
+</html>
+<!-- Header Section -->
+<div align="center">
+    <h1>🌍 Green Earth Initiative</h1>
+    <p><i>“Protect Nature, Secure Our Future”</i></p>
+    <hr width="80%" size="3" color="#2e8b57">
+</div>
+
+<br>
+
+<!-- Banner Image -->
+<div align="center">
+    <img src="c:\Users\user\Downloads\a0cc494b-33c6-46d4-b32f-9165ac114c5e.jpg" alt="Green Nature Banner" width="750" height="250">
+    <p>Our planet — our responsibility</p>
+</div>
+
+<br>
+
+<!-- About Section with Table -->
+<div align="center">
+    <h2>About Our Cause</h2>
+    <table width="80%" border="1" cellpadding="12" cellspacing="0">
+        <tr bgcolor="#90ee90">
+            <th>Our Goal</th>
+            <th>What We Do</th>
+            <th>How You Can Help</th>
+        </tr>
+        <tr>
+            <td align="center">Raise awareness on environmental protection and reduce pollution in local communities.</td>
+            <td align="center">Conduct clean-ups, tree planting, and educational campaigns in schools and barangays.</td>
+            <td align="center">Join our activities, practice waste segregation, and plant trees at home.</td>
+        </tr>
+    </table>
+</div>
+
+<br>
+<hr width="70%" color="#cccccc">
+<br>
+
+<!-- Gallery / Nature Images -->
+<div align="center">
+    <h2>Nature We Must Protect</h2>
+    <p>These are the beautiful places and resources we should never destroy.</p>
+
+    <table width="80%" border="0" cellpadding="10">
+        <tr align="center">
+            <td>
+                <img src="c:\Users\user\Downloads\0c333396-436b-4462-95b3-18483a2251ae.jpg" alt="Green Forest" width="220" height="150">
+                <p><b>Healthy Forests</b></p>
+            </td>
+            <td>
+                <img src="c:\Users\user\Downloads\a0131e1c-e5b9-4087-b549-0753a1f0da6d.jpg" alt="Clean Ocean" width="220" height="150">
+                <p><b>Clean Waters</b></p>
+            </td>
+            <td>
+                <img src="c:\Users\user\Downloads\1a0e9583-4d82-485e-b50f-56d230956c1e (1).jpg" alt="Community Garden" width="220" height="150">
+                <p><b>Green Communities</b></p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<br>
+<hr width="70%" color="#cccccc">
+<br>
+
+<!-- Information Section using Div & Paragraphs -->
+<div align="center">
+    <h2>Why It Matters</h2>
+    <div width="75%">
+        <p>Environment is everything to us — the air we breathe, the water we drink, and the land where we grow our food. When we damage nature through littering, burning plastics, or cutting trees without replacement, we bring harm to ourselves and the next generation.</p>
+        <p>Simple actions create big changes. Segregating trash, saving water, using eco-bags, and planting even one tree can help restore our surroundings. Nature does not need us — but we need nature.</p>
+        <p>Let us start today. It is never too late to care.</p>
+    </div>
+</div>
+
+<br>
+<hr width="70%" color="#cccccc">
+<br>
+
+<!-- Registration / Contact Form -->
+<div align="center">
+    <h2>Join Our Movement</h2>
+    <p>Fill out the form below to volunteer or receive updates.</p>
+
+    <form action="#" method="post">
+        <table width="40%" border="1" cellpadding="10">
+            <tr>
+                <td align="right"><label for="fname">Full Name:</label></td>
+                <td><input type="text" id="fname" name="fullname" size="30" required></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" size="30" required></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="number">Contact Number:</label></td>
+                <td><input type="tel" id="number" name="phone" size="30"></td>
+            </tr>
+            <tr>
+                <td align="right">Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Interests:</td>
+                <td>
+                    <input type="checkbox" id="plant" name="interest" value="Tree Planting">
+                    <label for="plant">Tree Planting</label><br>
+                    <input type="checkbox" id="clean" name="interest" value="Clean-up Drives">
+                    <label for="clean">Clean-up Drives</label><br>
+                    <input type="checkbox" id="edu" name="interest" value="Education Campaigns">
+                    <label for="edu">Education Campaigns</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="message">Message:</label></td>
+                <td>
+                    <textarea id="message" name="message" rows="4" cols="30" placeholder="Write your thoughts here..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit Form">
+                    &nbsp;&nbsp;
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<br>
+<hr width="80%" size="3" color="#2e8b57">
+
+<!-- Footer -->
+<div align="center">
+    <p>&copy; 2026 Green Earth Initiative | All Rights Reserved</p>
+    <p>Created by: <b>[Edward T. Mendez Jr]</b> | Section: <b>[BSIT-2B]</b></p>
+</div>
+
+</body>
+</html>

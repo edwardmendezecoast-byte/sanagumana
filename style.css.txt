@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+My Personal Space
+<!-- Bootstrap 5 CSS -->
+
+<!-- Navbar -->
+🌿 My Personal Space
+
+About Me
+
+Interests
+
+Gallery
+
+Contact
+<!-- Hero Section -->
+
+Welcome to My Space
+This is where I share my thoughts, hobbies, and dreams 💫
+<!-- About Me Section -->
+📝 About Me
+Hello! I'm a student who loves learning, creating, and exploring new things. This page is my little corner of the internet — my personal space where I can be myself.
+I believe in kindness, hard work, and chasing dreams. Life is a journey, and I'm enjoying every step of it. 🚀
+<!-- Interests Section -->
+❤️ My Interests
+📚 Learning
+Always curious, always growing. Knowledge is power!
+💻 Coding
+Building things and solving problems is my passion.
+🎨 Arts
+Expressing creativity and appreciating beauty.
+🌍 Travel
+Exploring new places and meeting new people.
+🎵 Music
+Music is the soundtrack of life.
+🏃 Fitness
+
+Healthy body, healthy mind!
+<!-- Gallery Section -->
+📸 My Gallery
+<!-- Contact Section -->
+📬 Connect With Me
+Edward T. Mendez Jr.
+mendezjredward07@gmail.com
+Message
+Send Message ✉️
+<!-- Footer -->
+Thank you for visiting my personal space! 
+© 2026 My Personal Space. All rights reserved.
+<!-- Bootstrap 5 JS Bundle -->
